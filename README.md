@@ -40,12 +40,19 @@
 
 Check out the video demo [here](https://drive.google.com/drive/folders/1PwW4KZpj_IEi5scVN4iCTrs2wx9NpHm6?usp=sharing).
 
+## Obsidian Horizon Platforms 🌐
+
+- **Marketplace**: [Marketplace](https://market-place-theta-two.vercel.app/)
+- **Token Swap**: [Swap Platform](https://obsidian-horizon-swap-gdi8.vercel.app/)
+- **Staking**: [Staking Platform](https://obsidian-horizon-stake.vercel.app/)
+- **Registration & Game**: [Obsidian Horizon](https://obsidein-horizon.vercel.app/)
 
 ### Prerequisites
 
 - **Node.js**: Ensure Node.js is installed.
 - **MetaMask**: Install the MetaMask browser extension.
 - **Ethereum Test Network**: Use a test network.
+
 
 ## License 📜
 
