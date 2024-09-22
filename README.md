@@ -36,8 +36,10 @@
 - **Smart Contracts**: Solidity (Ethereum) 📜
 - **Wallet Integration**: MetaMask with Web3.js / Ethers.js 🔐
 
+## Demo 🎥
 
-## Installation
+Check out the video demo [here](https://drive.google.com/drive/folders/1PwW4KZpj_IEi5scVN4iCTrs2wx9NpHm6?usp=sharing).
+
 
 ### Prerequisites
 
