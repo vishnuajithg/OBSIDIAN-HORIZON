@@ -1,0 +1,152 @@
+[gd_scene load_steps=21 format=3 uid="uid://dnq32f3oyx68"]
+
+[ext_resource type="Texture2D" uid="uid://ouadhiblpxrs" path="res://art/Snake3.png" id="1_35c73"]
+[ext_resource type="Script" path="res://enemies/snake.gd" id="1_ttxfg"]
+[ext_resource type="Script" path="res://enemies/animated_sprite_2d.gd" id="2_euhk3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c17gu"]
+atlas = ExtResource("1_35c73")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_up8xo"]
+atlas = ExtResource("1_35c73")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17npm"]
+atlas = ExtResource("1_35c73")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lk0x4"]
+atlas = ExtResource("1_35c73")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fqgvt"]
+atlas = ExtResource("1_35c73")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5m7b"]
+atlas = ExtResource("1_35c73")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tcxdd"]
+atlas = ExtResource("1_35c73")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vetjw"]
+atlas = ExtResource("1_35c73")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajqix"]
+atlas = ExtResource("1_35c73")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ffnn"]
+atlas = ExtResource("1_35c73")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0i8i0"]
+atlas = ExtResource("1_35c73")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3kaea"]
+atlas = ExtResource("1_35c73")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w551a"]
+atlas = ExtResource("1_35c73")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qy50o"]
+atlas = ExtResource("1_35c73")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vihg"]
+atlas = ExtResource("1_35c73")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lk1ry"]
+atlas = ExtResource("1_35c73")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_16tmw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c17gu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_up8xo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17npm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lk0x4")
+}],
+"loop": true,
+"name": &"walkDown",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fqgvt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5m7b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tcxdd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vetjw")
+}],
+"loop": true,
+"name": &"walkUp",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ajqix")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ffnn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0i8i0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3kaea")
+}],
+"loop": true,
+"name": &"walkleft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w551a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qy50o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vihg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lk1ry")
+}],
+"loop": true,
+"name": &"walkright",
+"speed": 5.0
+}]
+
+[node name="snake" type="CharacterBody2D"]
+script = ExtResource("1_ttxfg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, -15)
+scale = Vector2(1.8125, 1.8125)
+sprite_frames = SubResource("SpriteFrames_16tmw")
+animation = &"walkUp"
+frame_progress = 0.67378
+script = ExtResource("2_euhk3")
