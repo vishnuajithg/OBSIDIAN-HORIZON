@@ -46,3 +46,7 @@ Check out the video demo [here](https://drive.google.com/drive/folders/1PwW4KZpj
 - **Node.js**: Ensure Node.js is installed.
 - **MetaMask**: Install the MetaMask browser extension.
 - **Ethereum Test Network**: Use a test network.
+
+## License 📜
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
