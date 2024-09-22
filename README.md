@@ -27,15 +27,15 @@
 - **Staking Platform**: Stake tokens to earn rewards over time.
 - **NFT Marketplace**: Buy, sell, and trade NFTs with other players.
 
-## Tech Stack
+## Tech Stack 💻
 
-- **Game Engine**: Godot Engine
-- **Smart Contracts**: Solidity (Ethereum)
-- **Blockchain**: Ethereum
-- **Frontend**: React, Vite
-- **Backend**: Node.js, Express
-- **Storage**: IPFS (for NFTs)
-- **Wallet Integration**: MetaMask with Web3.js / Ethers.js
+- **Blockchain**: Ethereum ⛓️
+- **Game Engine**: Godot Engine 🎮
+- **Frontend**: React & Vite ⚛️🚀
+- **Backend**: Node.js & Express 🖥️
+- **Smart Contracts**: Solidity (Ethereum) 📜
+- **Wallet Integration**: MetaMask with Web3.js / Ethers.js 🔐
+
 
 ## Installation
 
